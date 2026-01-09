@@ -1,13 +1,9 @@
 <div align="center">
 
-**English** | [Português (Brasil)](README_pt-BR.md) | [Español](README_es.md) | [日本語](README_ja.md)
+[English](https://github.com/byPancra/MEGA-Account-Generator-GUI) | [Português (Brasil)](https://github.com/byPancra/MEGA-Account-Generator-GUI/tree/lang-pt-BR) | [Español](https://github.com/byPancra/MEGA-Account-Generator-GUI/tree/lang-es) | **日本語**
 
 </div>
 <br>
-
-<div align="center">
-
-</div>
 
 <div align="center">
 
@@ -15,198 +11,198 @@
 
   <h1 align="center">Mega Account Generator GUI</h1>
   
-  **The ultimate tool for automating MEGA.nz account creation and management.**
+  **MEGA.nzアカウントの作成と管理を自動化する究極のツール。**
   
-  *Generate, Manage, Tag, and Export your accounts with a professional-grade interface.*
+  *プロフェッショナルなインターフェースでアカウントを生成、管理、タグ付け、エクスポート。*
 
   [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
   [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
   [![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)]()
   [![Releases](https://img.shields.io/github/downloads/byPancra/Mega-Account-Generator-GUI/total?style=for-the-badge&color=orange)](https://github.com/byPancra/Mega-Account-Generator-GUI/releases)
 
-  [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Advanced Management](#-advanced-management) • [FAQ](#-faq)
+  [機能](#-機能) • [インストール](#-インストール) • [使い方](#-使い方) • [高度な管理](#-高度な管理) • [FAQ](#-faq)
 
 </div>
 
 ---
 
-## 📋 Overview
+## 📋 概要
 
-**Mega Account Generator GUI** is a robust, desktop-grade application designed for power users who need to generate and manage [MEGA.nz](https://mega.nz) accounts in bulk. Unlike simple scripts, this tool provides a complete ecosystem for account lifecycle management, including tagging, filtering, status tracking, and data export.
+**Mega Account Generator GUI** は、[MEGA.nz](https://mega.nz) アカウントを大量に生成および管理する必要があるパワーユーザー向けに設計された堅牢なデスクトップアプリケーションです。単純なスクリプトとは異なり、このツールは、タグ付け、フィルタリング、ステータス追跡、データエクスポートなど、アカウントのライフサイクル管理のための完全なエコシステムを提供します。
 
-Built with **Modern Python** (CustomTkinter) and **Thread-Safe Architecture**, it ensures reliability even when processing hundreds of accounts.
+**Modern Python** (CustomTkinter) と **スレッドセーフアーキテクチャ** で構築されており、数百のアカウントを処理する場合でも信頼性を保証します。
 
 ![Demo](./img/intro2.gif)
 
 ---
 
-## :zap: Features
+## :zap: 機能
 
-### 🚀 Core Generation
-*   **High-Speed Multi-Threading**: Generate up to 8 accounts simultaneously.
-*   **Smart Rate Limiting**: Intelligent delays and retry logic (up to 12 attempts) to bypass Mail.tm restrictions.
-*   **Bundled Dependencies**: The executable version comes with `megatools` pre-packaged—no external setup required.
+### 🚀 コア生成
+*   **高速マルチスレッド**: 同時に最大8つのアカウントを生成します。
+*   **スマートレート制限**: Mail.tmの制限を回避するためのインテリジェントな遅延と再試行ロジック（最大12回試行）。
+*   **バンドルされた依存関係**: 実行可能バージョンには `megatools` が事前にパッケージ化されており、外部設定は不要です。
 
-### 🛠️ Advanced Management
-*   **Tagging System**: Organize accounts with custom tags (e.g., `Personal`, `Backup`, `Client-A`) for easy retrieval.
-*   **Search & Filter**: Instantly find accounts by Email, Status (`Active`, `Disabled`, `Failed`), or Tags.
-*   **Bulk Operations**:
-    *   **Keep-Alive**: Automated sign-in to prevent account deletion due to inactivity.
-    *   **Storage Check**: Auto-update used/free storage quotas for all accounts.
-    *   **Account Control**: Disable specific accounts to exclude them from bulk operations (e.g., Keep-Alive checks) without deleting them.
+### 🛠️ 高度な管理
+*   **タグ付けシステム**: カスタムタグ（例：`個人用`、`バックアップ`、`クライアントA`）でアカウントを整理し、簡単に検索できます。
+*   **検索とフィルター**: メール、ステータス（`Active`、`Disabled`、`Failed`）、またはタグでアカウントを即座に見つけます。
+*   **一括操作**:
+    *   **Keep-Alive**: アクティビティがないことによるアカウント削除を防ぐための自動ログイン。
+    *   **ストレージチェック**: すべてのアカウントの使用済み/空きストレージクォータを自動更新します。
+    *   **アカウント制御**: 特定のアカウントを無効にして、削除することなく一括操作（例：Keep-Aliveチェック）から除外します。
 
-### 💾 Data Freedom
-*   **Professional Export**: Export your database to **Excel (.xlsx)** with formatted styling or **JSON** for programmatic use.
-*   **Seamless Import**: Migrate data from other tools or backups via JSON/Excel import.
-*   **Clipboard Integration**: One-click copy for emails and passwords.
+### 💾 データの自由
+*   **プロフェッショナルエクスポート**: データベースを、フォーマットされたスタイルを持つ **Excel (.xlsx)** またはプログラムで使用するための **JSON** にエクスポートします。
+*   **シームレスなインポート**: JSON/Excelインポートを介して、他のツールやバックアップからデータを移行します。
+*   **クリップボード統合**: メールとパスワードをワンクリックでコピーします。
 
-### 🔒 Security & Reliability
-*   **Thread-Safe CSV**: Prevents data corruption during concurrent writes.
-*   **Crash Recovery**: "Stop" button gracefully halts operations, preserving data integrity.
+### 🔒 セキュリティと信頼性
+*   **スレッドセーフCSV**: 同時書き込み中のデータ破損を防ぎます。
+*   **クラッシュ回復**: 「Stop」ボタンは操作を正常に停止し、データの整合性を維持します。
 
 ---
 
-## :rocket: Installation
+## :rocket: インストール
 
-### Option A: Standalone Executable (Recommended)
-Download the latest release. No Python or external tools needed.
-1.  Download `MegaGenerator.exe` from [Releases](https://github.com/byPancra/Mega-Account-Generator-GUI/releases).
-2.  Run the executable.
+### オプションA: スタンドアロン実行ファイル (推奨)
+最新リリースをダウンロードします。Pythonや外部ツールは必要ありません。
+1.  [Releases](https://github.com/byPancra/Mega-Account-Generator-GUI/releases) から `MegaGenerator.exe` をダウンロードします。
+2.  実行ファイルを実行します。
 
-### Option B: Running from Source
+### オプションB: ソースから実行
 
-**Prerequisites:**
+**前提条件:**
 *   Python 3.8+
-*   [Megatools](https://megatools.megous.com/) (Added to PATH)
+*   [Megatools](https://megatools.megous.com/) (PATHに追加済み)
 
-**Steps:**
-1.  **Clone the repository:**
+**手順:**
+1.  **リポジトリをクローン:**
     ```bash
     git clone https://github.com/byPancra/Mega-Account-Generator-GUI.git
     cd Mega-Account-Generator-GUI
     ```
 
-2.  **Install dependencies:**
+2.  **依存関係をインストール:**
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Run the application:**
+3.  **アプリケーションを実行:**
     ```bash
     python gui.py
     ```
 
 ---
 
-## :computer: Usage
+## :computer: 使い方
 
-### Generating Accounts
-1.  Navigate to the **Generator** tab.
-2.  Set the number of **Threads** and **Accounts** to generate.
-3.  Click **"Generate Accounts"**.
-4.  Credentials will be saved in `accounts.csv` and visible in the **Stored Accounts** tab.
+### アカウントの生成
+1.  **Generator** タブに移動します。
+2.  生成する **Threads** (スレッド) と **Accounts** (アカウント) の数を設定します。
+3.  **"Generate Accounts"** をクリックします。
+4.  資格情報は `accounts.csv` に保存され、**Stored Accounts** タブに表示されます。
 
-### Managing Accounts
-Navigate to the **Stored Accounts** tab:
-*   **Search**: Type an email to filter instantly.
-*   **Filter**: Use the dropdown to see only `Active`, `Disabled`, or `Failed` accounts.
-*   **Edit**: Click the "Edit" button to change a saved password or manage Tags.
-*   **Copy**: Quick buttons to copy credentials to clipboard.
+### アカウントの管理
+**Stored Accounts** タブに移動します:
+*   **検索**: メールを入力して即座にフィルタリングします。
+*   **フィルター**: ドロップダウンを使用して、`Active`、`Disabled`、または `Failed` アカウントのみを表示します。
+*   **編集**: "Edit" ボタンをクリックして、保存されたパスワードを変更したり、タグを管理したりします。
+*   **コピー**: 資格情報をクリップボードにコピーするためのクイックボタン。
 
-### 💻 CLI Usage (Command Line)
-For advanced users who prefer the terminal or want to integrate this into scripts.
+### 💻 CLI使用法 (コマンドライン)
+ターミナルを好む上級ユーザーや、これをスクリプトに統合したい場合。
 
 ```bash
-# Basic usage (Generates 3 accounts)
+# 基本的な使用法 (3つのアカウントを生成)
 python generate_accounts.py
 
-# Generate 50 accounts with 5 threads
+# 5つのスレッドで50のアカウントを生成
 python generate_accounts.py -n 50 -t 5
 
-# Set a specific password for all accounts
+# すべてのアカウントに特定のパスワードを設定
 python generate_accounts.py -n 10 -p "MySecretPass123!"
 ```
 
-**Arguments:**
-*   `-n`, `--number`: Number of accounts to create (Default: 3)
-*   `-t`, `--threads`: Number of concurrent threads (1-8)
-*   `-p`, `--password`: Common password for all accounts (Optional)
+**引数:**
+*   `-n`, `--number`: 作成するアカウントの数 (デフォルト: 3)
+*   `-t`, `--threads`: 同時スレッド数 (1-8)
+*   `-p`, `--password`: すべてのアカウントの共通パスワード (オプション)
 
-#### Keep-Alive Check (Login & Storage)
-To verify all accounts in `accounts.csv`, check their storage quota, and keep them active:
+#### Keep-Aliveチェック (ログインとストレージ)
+`accounts.csv` 内のすべてのアカウントを確認し、ストレージクォータをチェックして、アクティブに保つには:
 
 ```bash
 python signin_accounts.py
 ```
 
-*   **No arguments required.**
-*   Iterates through all accounts in `accounts.csv`.
-*   **Skips accounts marked as "Disabled".**
-*   Updates status to `Active` or `Login Failed`.
-*   Updates used/free storage values.
+*   **引数は不要です。**
+*   `accounts.csv` 内のすべてのアカウントを反復処理します。
+*   **"Disabled" (無効) としてマークされたアカウントはスキップされます。**
+*   ステータスを `Active` または `Login Failed` に更新します。
+*   使用済み/空きストレージ値を更新します。
 
 
 ---
 
-## :briefcase: Advanced Management
+## :briefcase: 高度な管理
 
-### Exporting Data
-You can export your entire account database for backup or external use.
-1.  Click **Export** in the top right.
-2.  Select **Excel** for a formatted spreadsheet or **JSON** for raw data.
-3.  Choose a save location.
+### データのエクスポート
+バックアップや外部使用のために、アカウントデータベース全体をエクスポートできます。
+1.  右上の **Export** をクリックします。
+2.  フォーマットされたスプレッドシートの場合は **Excel**、生データの場合は **JSON** を選択します。
+3.  保存場所を選択します。
 
-*Excel exports include color-coded status columns and formatted headers for easy reading.*
+*Excelエクスポートには、読みやすくするために色分けされたステータス列とフォーマットされたヘッダーが含まれます。*
 
-### Importing Data
-Migrate from previous versions or other tools.
-1.  Click **Import**.
-2.  Select a valid `.json` or `.xlsx` file.
-3.  The tool will merge the data into your `accounts.csv`.
+### データのインポート
+以前のバージョンや他のツールから移行します。
+1.  **Import** をクリックします。
+2.  有効な `.json` または `.xlsx` ファイルを選択します。
+3.  ツールはデータを `accounts.csv` にマージします。
 
 ---
 
 ## :grey_question: FAQ
 
 <details>
-<summary><strong>Why am I limited to 8 threads?</strong></summary>
-The temporary email provider (Mail.tm) has strict rate limits. Exceeding 8 concurrent threads significantly increases the chance of IP bans or failed generations.
+<summary><strong>なぜ8スレッドに制限されているのですか？</strong></summary>
+一時メールプロバイダー (Mail.tm) には厳格なレート制限があります。同時スレッド数が8を超えると、IPBANや生成失敗の可能性が大幅に高まります。
 </details>
 
 <details>
-<summary><strong>What does the "Sign In" button do?</strong></summary>
-It performs a "Keep-Alive" check. It attempts to log in to your accounts using `megatools`. This updates the storage quota information and signals to MEGA that the account is active, preventing deletion.
+<summary><strong>"Sign In" ボタンは何をしますか？</strong></summary>
+"Keep-Alive" チェックを実行します。`megatools` を使用してアカウントへのログインを試みます。これにより、ストレージクォータ情報が更新され、アカウントがアクティブであることがMEGAに通知され、削除が防止されます。
 </details>
 
 <details>
-<summary><strong>Where are my accounts saved?</strong></summary>
-All data is stored locally in `accounts.csv` in the application directory. You can also export this data using the Export feature.
+<summary><strong>アカウントはどこに保存されますか？</strong></summary>
+すべてのデータは、アプリケーションディレクトリ内の `accounts.csv` にローカルに保存されます。エクスポート機能を使用してこのデータをエクスポートすることもできます。
 </details>
 
 <details>
-<summary><strong>I see "Megatools not found" error.</strong></summary>
-If running from source, ensure `megatools` is installed and added to your System PATH. If using the executable, this is handled automatically.
+<summary><strong>"Megatools not found" エラーが表示されます。</strong></summary>
+ソースから実行している場合は、`megatools` がインストールされ、システムPATHに追加されていることを確認してください。実行ファイルを使用している場合、これは自動的に処理されます。
 </details>
 
 ---
 
-## :warning: Disclaimer
+## :warning: 免責事項
 
-This tool is created for **educational and testing purposes only**. Using this software to abuse third-party services, bypass restrictions, or violate terms of service (ToS) of MEGA.nz or Mail.tm is strictly prohibited. The developer assumes no responsibility for misuse.
-
----
-
-## :sparkling_heart: Acknowledgements
-
-*   Based on the original work by [f-o/MEGA-Account-Generator](https://github.com/f-o/MEGA-Account-Generator).
-*   GUI Components by [TomSchimansky/CustomTkinter](https://github.com/TomSchimansky/CustomTkinter).
-*   Enhanced and Maintained by [byPancra](https://github.com/byPancra).
+このツールは、**教育およびテスト目的のみ**に作成されています。このソフトウェアを使用してサードパーティのサービスを悪用したり、制限を回避したり、MEGA.nzまたはMail.tmの利用規約 (ToS) に違反したりすることは固く禁じられています。開発者は、悪用に対して一切の責任を負いません。
 
 ---
 
-## :copyright: License
+## :sparkling_heart: 謝辞
 
-Distributed under the **MIT License**. See [LICENSE](LICENSE)  for details.
+*   [f-o/MEGA-Account-Generator](https://github.com/f-o/MEGA-Account-Generator) によるオリジナルの作品に基づいています。
+*   [TomSchimansky/CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) によるGUIコンポーネント。
+*   [byPancra](https://github.com/byPancra) によって強化および保守されています。
+
+---
+
+## :copyright: ライセンス
+
+**MITライセンス**の下で配布されています。詳細は [LICENSE](LICENSE) を参照してください。
 
 <div align="center">
   <sub>Developed with ❤️ by <a href="https://github.com/byPancra">byPancra</a></sub>
