@@ -1,6 +1,6 @@
 <div align="center">
 
-[English](README.md) | [Português (Brasil)](README_pt-BR.md) | [Español](README_es.md) | [日本語](README_ja.md)
+[English](README.md) | **Português (Brasil)** | [Español](README_es.md) | [日本語](README_ja.md)
 
 </div>
 <br>
@@ -207,3 +207,4 @@ Distribuído sob a **Licença MIT**. Veja [LICENSE](LICENSE) para detalhes.
 <div align="center">
   <sub>Desenvolvido com ❤️ por <a href="https://github.com/byPancra">byPancra</a></sub>
 </div>
+
