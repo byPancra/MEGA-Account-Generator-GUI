@@ -1,13 +1,9 @@
 <div align="center">
 
-**English** | [Português (Brasil)](README_pt-BR.md) | [Español](README_es.md) | [日本語](README_ja.md)
+[English](README.md) | [Português (Brasil)](README_pt-BR.md) | **Español** | [日本語](README_ja.md)
 
 </div>
 <br>
-
-<div align="center">
-
-</div>
 
 <div align="center">
 
@@ -15,199 +11,199 @@
 
   <h1 align="center">Mega Account Generator GUI</h1>
   
-  **The ultimate tool for automating MEGA.nz account creation and management.**
+  **La herramienta definitiva para la automatización de la creación y gestión de cuentas de MEGA.nz.**
   
-  *Generate, Manage, Tag, and Export your accounts with a professional-grade interface.*
+  *Genere, Gestione, Etiquete y Exporte sus cuentas con una interfaz de nivel profesional.*
 
   [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
   [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
   [![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)]()
   [![Releases](https://img.shields.io/github/downloads/byPancra/Mega-Account-Generator-GUI/total?style=for-the-badge&color=orange)](https://github.com/byPancra/Mega-Account-Generator-GUI/releases)
 
-  [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Advanced Management](#-advanced-management) • [FAQ](#-faq)
+  [Características](#-características) • [Instalación](#-instalación) • [Uso](#-uso) • [Gestión Avanzada](#-gestión-avanzada) • [FAQ](#-faq)
 
 </div>
 
 ---
 
-## 📋 Overview
+## 📋 Descripción General
 
-**Mega Account Generator GUI** is a robust, desktop-grade application designed for power users who need to generate and manage [MEGA.nz](https://mega.nz) accounts in bulk. Unlike simple scripts, this tool provides a complete ecosystem for account lifecycle management, including tagging, filtering, status tracking, and data export.
+**Mega Account Generator GUI** es una aplicación robusta de escritorio diseñada para usuarios avanzados que necesitan generar y gestionar cuentas de [MEGA.nz](https://mega.nz) en masa. A diferencia de scripts simples, esta herramienta proporciona un ecosistema completo para la gestión del ciclo de vida de la cuenta, incluyendo etiquetado, filtrado, seguimiento de estado y exportación de datos.
 
-Built with **Modern Python** (CustomTkinter) and **Thread-Safe Architecture**, it ensures reliability even when processing hundreds of accounts.
+Construido con **Python Moderno** (CustomTkinter) y **Arquitectura Thread-Safe**, garantiza confiabilidad incluso al procesar cientos de cuentas.
 
 ![Demo](./img/intro2.gif)
 
 ---
 
-## :zap: Features
+## :zap: Características
 
-### 🚀 Core Generation
-*   **High-Speed Multi-Threading**: Generate up to 8 accounts simultaneously.
-*   **Smart Rate Limiting**: Intelligent delays and retry logic (up to 12 attempts) to bypass Mail.tm restrictions.
-*   **Bundled Dependencies**: The executable version comes with `megatools` pre-packaged—no external setup required.
+### 🚀 Generación Principal
+*   **Multi-Threading de Alta Velocidad**: Genere hasta 8 cuentas simultáneamente.
+*   **Limitación de Tasa Inteligente**: Retrasos inteligentes y lógica de reintento (hasta 12 intentos) para evitar las restricciones de Mail.tm.
+*   **Dependencias Integradas**: La versión ejecutable viene con `megatools` pre-empaquetado—no se requiere configuración externa.
 
-### 🛠️ Advanced Management
-*   **Tagging System**: Organize accounts with custom tags (e.g., `Personal`, `Backup`, `Client-A`) for easy retrieval.
-*   **Search & Filter**: Instantly find accounts by Email, Status (`Active`, `Disabled`, `Failed`), or Tags.
-*   **Bulk Operations**:
-    *   **Keep-Alive**: Automated sign-in to prevent account deletion due to inactivity.
-    *   **Storage Check**: Auto-update used/free storage quotas for all accounts.
-    *   **Account Control**: Disable specific accounts to exclude them from bulk operations (e.g., Keep-Alive checks) without deleting them.
+### 🛠️ Gestión Avanzada
+*   **Sistema de Etiquetas**: Organice cuentas con etiquetas personalizadas (ej: `Personal`, `Backup`, `Cliente-A`) para facilitar su recuperación.
+*   **Búsqueda y Filtro**: Encuentre cuentas instantáneamente por Correo, Estado (`Active`, `Disabled`, `Failed`) o Etiquetas.
+*   **Operaciones Masivas**:
+    *   **Keep-Alive**: Inicio de sesión automatizado para evitar la eliminación de cuentas por inactividad.
+    *   **Verificación de Almacenamiento**: Actualiza automáticamente las cuotas de almacenamiento usado/libre para todas las cuentas.
+    *   **Control de Cuentas**: Deshabilite cuentas específicas para excluirlas de operaciones masivas (ej: verificaciones Keep-Alive) sin eliminarlas.
 
-### 💾 Data Freedom
-*   **Professional Export**: Export your database to **Excel (.xlsx)** with formatted styling or **JSON** for programmatic use.
-*   **Seamless Import**: Migrate data from other tools or backups via JSON/Excel import.
-*   **Clipboard Integration**: One-click copy for emails and passwords.
+### 💾 Libertad de Datos
+*   **Exportación Profesional**: Exporte su base de datos a **Excel (.xlsx)** con estilo formateado o **JSON** para uso programático.
+*   **Importación Perfecta**: Migre datos de otras herramientas o copias de seguridad mediante importación JSON/Excel.
+*   **Integración con Portapapeles**: Copia con un clic para correos y contraseñas.
 
-### 🔒 Security & Reliability
-*   **Thread-Safe CSV**: Prevents data corruption during concurrent writes.
-*   **Crash Recovery**: "Stop" button gracefully halts operations, preserving data integrity.
+### 🔒 Seguridad y Confiabilidad
+*   **CSV Thread-Safe**: Previene la corrupción de datos durante escrituras simultáneas.
+*   **Recuperación de Fallos**: El botón "Stop" detiene las operaciones con gracia, preservando la integridad de los datos.
 
 ---
 
-## :rocket: Installation
+## :rocket: Instalación
 
-### Option A: Standalone Executable (Recommended)
-Download the latest release. No Python or external tools needed.
-1.  Download `MegaGenerator.exe` from [Releases](https://github.com/byPancra/Mega-Account-Generator-GUI/releases).
-2.  Run the executable.
+### Opción A: Ejecutable Independiente (Recomendado)
+Descargue la última versión. No se necesita Python ni herramientas externas.
+1.  Descargue `MegaGenerator.exe` desde [Releases](https://github.com/byPancra/Mega-Account-Generator-GUI/releases).
+2.  Ejecute el archivo.
 
-### Option B: Running from Source
+### Opción B: Ejecutando desde el Código Fuente
 
-**Prerequisites:**
+**Requisitos previos:**
 *   Python 3.8+
-*   [Megatools](https://megatools.megous.com/) (Added to PATH)
+*   [Megatools](https://megatools.megous.com/) (Agregado al PATH)
 
-**Steps:**
-1.  **Clone the repository:**
+**Pasos:**
+1.  **Clonar el repositorio:**
     ```bash
     git clone https://github.com/byPancra/Mega-Account-Generator-GUI.git
     cd Mega-Account-Generator-GUI
     ```
 
-2.  **Install dependencies:**
+2.  **Instalar dependencias:**
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Run the application:**
+3.  **Ejecutar la aplicación:**
     ```bash
     python gui.py
     ```
 
 ---
 
-## :computer: Usage
+## :computer: Uso
 
-### Generating Accounts
-1.  Navigate to the **Generator** tab.
-2.  Set the number of **Threads** and **Accounts** to generate.
-3.  Click **"Generate Accounts"**.
-4.  Credentials will be saved in `accounts.csv` and visible in the **Stored Accounts** tab.
+### Generando Cuentas
+1.  Navegue a la pestaña **Generator**.
+2.  Establezca el número de **Threads** (Hilos) y **Accounts** (Cuentas) a generar.
+3.  Haga clic en **"Generate Accounts"**.
+4.  Las credenciales se guardarán en `accounts.csv` y serán visibles en la pestaña **Stored Accounts**.
 
-### Managing Accounts
-Navigate to the **Stored Accounts** tab:
-*   **Search**: Type an email to filter instantly.
-*   **Filter**: Use the dropdown to see only `Active`, `Disabled`, or `Failed` accounts.
-*   **Edit**: Click the "Edit" button to change a saved password or manage Tags.
-*   **Copy**: Quick buttons to copy credentials to clipboard.
+### Gestionando Cuentas
+Navegue a la pestaña **Stored Accounts**:
+*   **Búsqueda**: Escriba un correo para filtrar instantáneamente.
+*   **Filtro**: Use el menú desplegable para ver solo cuentas `Active`, `Disabled`, o `Failed`.
+*   **Editar**: Haga clic en el botón "Edit" para cambiar una contraseña guardada o gestionar Etiquetas.
+*   **Copiar**: Botones rápidos para copiar credenciales al portapapeles.
 
-### 💻 CLI Usage (Command Line)
-For advanced users who prefer the terminal or want to integrate this into scripts.
+### 💻 Uso vía CLI (Línea de Comandos)
+Para usuarios avanzados que prefieren la terminal o quieren integrar esto en scripts.
 
 ```bash
-# Basic usage (Generates 3 accounts)
+# Uso básico (Gera 3 cuentas)
 python generate_accounts.py
 
-# Generate 50 accounts with 5 threads
+# Generar 50 cuentas con 5 hilos
 python generate_accounts.py -n 50 -t 5
 
-# Set a specific password for all accounts
-python generate_accounts.py -n 10 -p "MySecretPass123!"
+# Establecer una contraseña específica para todas las cuentas
+python generate_accounts.py -n 10 -p "MiContraseñaSecreta123!"
 ```
 
-**Arguments:**
-*   `-n`, `--number`: Number of accounts to create (Default: 3)
-*   `-t`, `--threads`: Number of concurrent threads (1-8)
-*   `-p`, `--password`: Common password for all accounts (Optional)
+**Argumentos:**
+*   `-n`, `--number`: Número de cuentas para crear (Por defecto: 3)
+*   `-t`, `--threads`: Número de hilos concurrentes (1-8)
+*   `-p`, `--password`: Contraseña común para todas las cuentas (Opcional)
 
-#### Keep-Alive Check (Login & Storage)
-To verify all accounts in `accounts.csv`, check their storage quota, and keep them active:
+#### Verificación Keep-Alive (Inicio de Sesión y Almacenamiento)
+Para verificar todas las cuentas en `accounts.csv`, comprobar su cuota de almacenamiento y mantenerlas activas:
 
 ```bash
 python signin_accounts.py
 ```
 
-*   **No arguments required.**
-*   Iterates through all accounts in `accounts.csv`.
-*   **Skips accounts marked as "Disabled".**
-*   Updates status to `Active` or `Login Failed`.
-*   Updates used/free storage values.
+*   **No se requieren argumentos.**
+*   Itera a través de todas las cuentas en `accounts.csv`.
+*   **Omite cuentas marcadas como "Disabled".**
+*   Actualiza el estado a `Active` o `Login Failed`.
+*   Actualiza valores de almacenamiento usado/libre.
 
 
 ---
 
-## :briefcase: Advanced Management
+## :briefcase: Gestión Avanzada
 
-### Exporting Data
-You can export your entire account database for backup or external use.
-1.  Click **Export** in the top right.
-2.  Select **Excel** for a formatted spreadsheet or **JSON** for raw data.
-3.  Choose a save location.
+### Exportando Datos
+Puede exportar toda su base de datos de cuentas para copia de seguridad o uso externo.
+1.  Haga clic en **Export** en la esquina superior derecha.
+2.  Seleccione **Excel** para una hoja de cálculo formateada o **JSON** para datos sin procesar.
+3.  Elija una ubicación para guardar.
 
-*Excel exports include color-coded status columns and formatted headers for easy reading.*
+*Las exportaciones en Excel incluyen columnas de estado codificadas por colores y encabezados formateados para facilitar la lectura.*
 
-### Importing Data
-Migrate from previous versions or other tools.
-1.  Click **Import**.
-2.  Select a valid `.json` or `.xlsx` file.
-3.  The tool will merge the data into your `accounts.csv`.
+### Importando Datos
+Migre desde versiones anteriores u otras herramientas.
+1.  Haga clic en **Import**.
+2.  Seleccione un archivo `.json` o `.xlsx` válido.
+3.  La herramienta fusionará los datos en su `accounts.csv`.
 
 ---
 
 ## :grey_question: FAQ
 
 <details>
-<summary><strong>Why am I limited to 8 threads?</strong></summary>
-The temporary email provider (Mail.tm) has strict rate limits. Exceeding 8 concurrent threads significantly increases the chance of IP bans or failed generations.
+<summary><strong>¿Por qué estoy limitado a 8 hilos?</strong></summary>
+El proveedor de correo temporal (Mail.tm) tiene límites de tasa estrictos. Exceder 8 hilos concurrentes aumenta significativamente la probabilidad de prohibiciones de IP o fallos en la generación.
 </details>
 
 <details>
-<summary><strong>What does the "Sign In" button do?</strong></summary>
-It performs a "Keep-Alive" check. It attempts to log in to your accounts using `megatools`. This updates the storage quota information and signals to MEGA that the account is active, preventing deletion.
+<summary><strong>¿Qué hace el botón "Sign In"?</strong></summary>
+Realiza una verificación "Keep-Alive". Intenta iniciar sesión en sus cuentas usando `megatools`. Esto actualiza la información de cuota de almacenamiento y señala a MEGA que la cuenta está activa, evitando su eliminación.
 </details>
 
 <details>
-<summary><strong>Where are my accounts saved?</strong></summary>
-All data is stored locally in `accounts.csv` in the application directory. You can also export this data using the Export feature.
+<summary><strong>¿Dónde se guardan mis cuentas?</strong></summary>
+Todos los datos se almacenan localmente en `accounts.csv` en el directorio de la aplicación. También puede exportar estos datos usando la función Exportar.
 </details>
 
 <details>
-<summary><strong>I see "Megatools not found" error.</strong></summary>
-If running from source, ensure `megatools` is installed and added to your System PATH. If using the executable, this is handled automatically.
+<summary><strong>Veo el error "Megatools not found".</strong></summary>
+Si está ejecutando desde el código fuente, asegúrese de que `megatools` esté instalado y agregado a su PATH del Sistema. Si usa el ejecutable, esto se maneja automáticamente.
 </details>
 
 ---
 
-## :warning: Disclaimer
+## :warning: Descargo de Responsabilidad
 
-This tool is created for **educational and testing purposes only**. Using this software to abuse third-party services, bypass restrictions, or violate terms of service (ToS) of MEGA.nz or Mail.tm is strictly prohibited. The developer assumes no responsibility for misuse.
-
----
-
-## :sparkling_heart: Acknowledgements
-
-*   Based on the original work by [f-o/MEGA-Account-Generator](https://github.com/f-o/MEGA-Account-Generator).
-*   GUI Components by [TomSchimansky/CustomTkinter](https://github.com/TomSchimansky/CustomTkinter).
-*   Enhanced and Maintained by [byPancra](https://github.com/byPancra).
+Esta herramienta se crea solo para **fines educativos y de prueba**. Usar este software para abusar de servicios de terceros, eludir restricciones o violar los términos de servicio (ToS) de MEGA.nz o Mail.tm está estrictamente prohibido. El desarrollador no asume responsabilidad por el mal uso.
 
 ---
 
-## :copyright: License
+## :sparkling_heart: Agradecimientos
 
-Distributed under the **MIT License**. See [LICENSE](LICENSE)  for details.
+*   Basado en el trabajo original de [f-o/MEGA-Account-Generator](https://github.com/f-o/MEGA-Account-Generator).
+*   Componentes GUI por [TomSchimansky/CustomTkinter](https://github.com/TomSchimansky/CustomTkinter).
+*   Mejorado y Mantenido por [byPancra](https://github.com/byPancra).
+
+---
+
+## :copyright: Licencia
+
+Distribuido bajo la **Licencia MIT**. Vea [LICENSE](LICENSE) para detalles.
 
 <div align="center">
-  <sub>Developed with ❤️ by <a href="https://github.com/byPancra">byPancra</a></sub>
+  <sub>Desarrollado con ❤️ por <a href="https://github.com/byPancra">byPancra</a></sub>
 </div>
